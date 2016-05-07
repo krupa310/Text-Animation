@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Convozo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style.css" />
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".lbl1 span:first").addClass("move1");
+                $(".lbl2 span:first").addClass("move2");
+                $(".lbl3 span:first").css("left", "20px").addClass("move3");
+                $(".des1 span:first").addClass("move4");
+                $(".des2 span:first").addClass("move5");
+                $(".des3 span:first").addClass("move6");
+                $(".third-des .show-main").removeClass("show").addClass('hide');
+                $(".third-des .hide-content").removeClass("hide").addClass('show move7');
+                $(".third-des .ur-audience").css("display", "block").addClass('move8');
+                $(".white-text .dash").css("display", "none");
+            }, 4000);
+
+        });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="dark-div">
+            <div class="logo-div">
+                <img src="logo.png" class="logo" />
+            </div>
+            <div class="name-section">
+                <p><label class="white-text first-name lbl1"><span>CON</span> <b class="dash">-</b></label><label class="des first-des des1 move1"><span>Connect</span></label></p>
+                <p><label class="white-text second-name lbl2"><span>voz</span> <b class="dash">-</b> </label><label class="des second-des des2"><span>your voice</span></label></p>
+                <p><label class="white-text third-name lbl3"><span>o</span> <b class="dash">-</b></label><label class="des third-des des3"><span class="show-main">with your audience</span><span class="hide-content ">with</span><span class="ur-audience">your audience</span></label></p>
+            </div>
+            <div class="long-des">
+                <div class="long-des-main">
+                    A social media <br />
+                    <strong>PLATFORM</strong><br />
+                    just for <strong>APPS</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
